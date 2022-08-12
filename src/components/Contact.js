@@ -47,7 +47,7 @@ export const Contact = () => {
             </div>
 
 
-            <div className='bg-slate-900 text-center py-2 px-3 text-sm font-light'>
+            <div className='bg-black text-center py-2 px-3 text-sm '>
                 <div className="container mx-auto">
                     Created with <Link href={"https://daisyui.com/"} name="DaisyUI" />,&nbsp;
                     <Link href={"https://tailwindcss.com/"} name="TailwindCSS" />,&nbsp;

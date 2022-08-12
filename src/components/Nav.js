@@ -30,7 +30,7 @@ export const Nav = () => {
                 <Menu className={"menu menu-horizontal p-0 space-x-3"} />
             </div>
             <div className="navbar-end">
-                <a className="btn border-none bg-gradient-to-r from-sky-500 to-green-500" href={"mailto::" + getInfo('email')}>Contact me</a>
+                <a className="btn border-none" href={"mailto:" + getInfo('email')}>Contact me</a>
             </div>
         </div>
     );

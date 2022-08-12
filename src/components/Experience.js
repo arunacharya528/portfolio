@@ -22,11 +22,11 @@ export const Experience = () => {
     }, [experiences])
 
     return (
-        <div className='min-h-screen flex flex-col' id="exp">
-            <Header text={"Experiences"} />
+        <div className='min-h-screen flex flex-col' >
+            <Header text={"Experiences"} id="exp" />
 
             {experiences.loading ? "Loading" :
-                <div className=" grow">
+                <div className=" grow" >
                     <div class="drawer drawer-mobile container mx-auto h-fit">
                         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
                         <div class="drawer-content flex flex-col p-5">
@@ -45,7 +45,7 @@ export const Experience = () => {
                         </div>
                         <div class="drawer-side">
                             <label for="my-drawer-2" class="drawer-overlay"></label>
-                            <ul class="menu w-56 p-2 bg-slate-900">
+                            <ul class="menu w-56 p-2 bg-slate-900 lg:bg-transparent">
                                 {experiences.data.map((experience, index) =>
                                     <li key={index} className={selected !== null && selected.title === experience.title ? 'bg-primary rounded-md' : ''}><a onClick={e => setSelected(experience)}>{experience.title}</a></li>
                                 )}

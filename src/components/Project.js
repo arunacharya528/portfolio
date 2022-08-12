@@ -47,8 +47,8 @@ export const Project = () => {
     }
 
     return (
-        <div className='bg-fixed min-h-screen container mx-auto p-5' id="project">
-            <Header text={'Projects'} />
+        <div className='bg-fixed min-h-screen container mx-auto p-5'>
+            <Header text={'Projects'} id="project" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {
 
