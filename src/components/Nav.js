@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import Scrollspy from "react-scrollspy";
+import { InfoContext } from "../context/InfoContext";
 
 export const Nav = () => {
-
+    const { getInfo } = useContext(InfoContext)
     const Menu = ({ className }) => {
         return (
-            <Scrollspy items={['intro', 'project', 'exp', 'contact']} currentClassName="bg-primary" className={""+className}>
+            <Scrollspy items={['intro', 'project', 'exp', 'contact']} currentClassName="bg-primary" className={"" + className}>
                 <span className="p-3 rounded-md"><a href="#intro">About</a></span>
                 <span className="p-3 rounded-md"><a href="#project">Project</a></span>
                 <span className="p-3 rounded-md"><a href="#exp">Experiences</a></span>
@@ -28,7 +30,7 @@ export const Nav = () => {
                 <Menu className={"menu menu-horizontal p-0 space-x-3"} />
             </div>
             <div className="navbar-end">
-                <a className="btn border-none bg-gradient-to-r from-sky-500 to-green-500" href="mailto::arunacharya255@gmail.com">Contact me</a>
+                <a className="btn border-none bg-gradient-to-r from-sky-500 to-green-500" href={"mailto::" + getInfo('email')}>Contact me</a>
             </div>
         </div>
     );

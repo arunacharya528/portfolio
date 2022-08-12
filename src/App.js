@@ -6,20 +6,20 @@ import { Nav } from './components/Nav';
 import { Project } from './components/Project';
 import { ModalProvider } from './context/ModalContext';
 import Scrollspy from 'react-scrollspy'
+import { InfoContext, InfoProvider } from './context/InfoContext';
 
 function App() {
-
-  console.log(process.env.REACT_APP_API_URL)
   return (
-
     <ModalProvider>
-      <div className='bg-slate-800 text-white'>
-        <Nav />
-        <Introduction />
-        <Project />
-        <Experience />
-        <Contact />
-      </div>
+      <InfoProvider>
+        <div className='bg-slate-800 text-white'>
+          <Nav />
+          <Introduction />
+          <Project />
+          <Experience />
+          <Contact />
+        </div>
+      </InfoProvider>
     </ModalProvider >
 
   );
