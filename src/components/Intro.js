@@ -9,7 +9,7 @@ export const Introduction = () => {
                 <div>
                     <img src={getInfo('photo')} className="bg-contain w-32 h-32 md:w-64 md:h-64 rounded-full" />
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-2 p-5">
                     <div className="text-lg font-semibold">Hi. I'm</div>
                     <div className="text-5xl font-bold">Arun Acharya</div>
                     <div className="text-xl font-semibold space-x-2">

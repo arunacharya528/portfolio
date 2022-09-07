@@ -71,12 +71,12 @@ export const Project = () => {
                                     <h2 class="card-title">{project.name}</h2>
                                     <div className="grow"></div>
                                     <div class="card-actions flex flex-col">
-                                        <div className="flex space-x-2">
+                                        <div className="flex space-x-2 flex-wrap">
                                             {project.tag.split(",").map((tag, index) =>
                                                 <div class="badge" key={index}>{tag}</div>
                                             )}
                                         </div>
-                                        <div>{moment(project.created_at).fromNow()}</div>
+                                        <div>{moment(project.created_at).format("MMMM Do YYYY")}</div>
 
                                         <div>
                                             <button class="btn btn-sm btn-primary" onClick={e => onOpen(project)}>View</button>
